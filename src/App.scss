@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    .App {
+        background: linear-gradient(#a09393, #589c8f);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 80%;
+            height: 90vh;
+
+            form {
+                padding: 50px 50px;
+                width: 30%;
+                margin: auto;
+                .input {
+                    position: relative;
+                    input {
+                        width: 100%;
+                        display: block;
+                        padding: 8px 0px;
+                        border: none;
+                        border-bottom: 2px solid #fff;
+                        margin-bottom: 20px;
+                        background-color: transparent;
+                        &placeholder {
+                            color: #7b7b7b;
+                            font-size: 18px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                        &:focus + .border {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                    .border {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        height: 2px;
+                        width: 0;
+                        background-color: #5ccab5;
+                        display: block;
+                        transition: .5s;
+                    }
+                }
+                button {
+                    padding: 10px 25px;
+                    background-color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    position: relative;
+                    overflow: hidden;
+                    color: #5ccab5;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            ul {
+                margin: auto;
+                width: 30%;
+                li {
+                    color: #e4e8e8;
+                    margin: 15px 0 ;
+                    font-size: 18px;
+                    span {
+                        font: 20px;
+                        color: #5ccab5;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}
